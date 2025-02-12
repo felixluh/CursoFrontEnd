@@ -1,0 +1,60 @@
+body{
+ background-color: rgb(167, 224, 250);
+ margin: 0;
+ padding: 0;
+}
+.header{
+    background-color: rgb(6, 37, 138);
+    height:8vh;
+    width: 100vw;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5dvh;
+    color: aliceblue;
+}
+.menuHamb{
+    display: none;
+}
+
+/* Media Query */
+/* estilização ate 800px */
+@media screen and ( max-width: 800px){
+   .menu{
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        background-color: rgb(6, 37, 138);
+        visibility: hidden;
+   }
+   .menuHamb{
+        display: flex;
+        height: 8vh;
+        width: 100%;
+   }
+   .nav{
+    width: 15vw;
+   }
+   .header{
+    display: flex;
+    justify-content: end;
+   }
+.nav:hover .menu{
+    visibility: visible;
+}
+}
