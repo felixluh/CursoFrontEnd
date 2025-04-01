@@ -1,0 +1,90 @@
+/* folha de estilização da galeria de imagens  */
+
+body{
+    font-family: Comic Sans MS;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.container{
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+input{
+    margin: 10px 0;
+}
+
+#addImagem{
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: dodgerblue;
+    color: aliceblue;
+}
+
+#addImagem:hover{
+    background: blue;
+}
+
+#carrosselContainer{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+#carrossel{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#carrossel img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+ /* estilização das imagens */
+
+ .imagemContainer{
+    position: relative;
+    margin: 10px;
+ }
+ .imagemContainer img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+ }
+ .remove{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: none;
+    color: white;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 100%;
+ }
+ .remove:hover{
+    color: red;
+    background: white;
+ }
