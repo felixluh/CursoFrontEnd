@@ -1,0 +1,166 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #a5ffe9;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #add;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+section {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+aside {
+    background-color: #ccc;
+    padding: 20px;
+    width: 200px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px; /*Borda arredondada*/
+    overflow: hidden;
+}
+
+th, td{
+    border: 1px solid #add;
+    padding: 8px;
+    text-align: left;
+}
+
+th{
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+ul {
+    list-style-type: disc;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+ol{
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.containerTabela {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    
+}
+
+h2{
+    margin-top: 30px;
+}
+
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+form div{
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="passaword"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea{
+    resize: vertical;
+}
+
+form input[type="radio"],
+form input[type="ckeckbox"] {
+margin-right: 5px;
+}
+
+form button[type="submit"] {
+background-color: #5cb85c;
+color: white;
+padding: 10px  15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+    font-size: 1em;
+}
+
+/* Estilo para o efeito focus nos inputs e textarea */
+form input:focus,
+form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona um leve brilho */
+    outline: none; /* Remove a borda padrão de foco do navegador */
+}
+
+/* Estilo para o efeito hover no botão */
+form button[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

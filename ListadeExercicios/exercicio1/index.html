@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Meu Site Básico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Titulo</h1> 
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://idocode.com.br/wp-content/uploads/2021/07/programacao-scaled.jpg">Programação</a></li>
+            <li><a href="https://blog.xpeducacao.com.br/wp-content/uploads/2022/08/o-que-e-html.png">Programação Html</a></li>
+            <li><a href="https://media.licdn.com/dms/image/v2/C5616AQEqKW4snwWyIQ/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1610649136451?e=2147483647&v=beta&t=8GhoEi6sCHAqp8idD_tKPiiOcXLKgM8wHIOY6_njXwA">Senai Limeira</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Seção 1</h2>
+            <p> Conteudo da seção 1</p>
+        </section>
+
+        <section>
+            <h2>Seção 2</h2>
+            <p> Mais Conteúdo Aqui</p>
+        </section>
+        
+        <aside>
+            <h3>Barra Lateral</h3>
+            <p>Informações adicionais</p>
+        </aside>
+    </main>
+
+    <hr> <h2>Lista e Tabelas</h2>
+
+        <h3>Lista Não Ordenada</h3>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    <div class="containerTabela"><h3>Tabela de Pessoas</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João</td>
+                    <td>25</td>
+                    <td>São Paulo</td>
+                </tr>
+
+                <tr>
+                    <td>Maria</td>
+                    <td>30</td>
+                    <td>Rio de Janeiro</td>
+                </tr>
+
+                <tr>
+                    <td>Ana</td>
+                    <td>22</td>
+                    <td>Ceara</td>
+                </tr>
+
+                <tr>
+                    <td>Carlos</td>
+                    <td>35</td>
+                    <td>São Paulo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<hr> <h2>Formulario Personalizado</h2>
+
+<form>
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+    </div>
+
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </div>
+
+    <div>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+    </div>
+
+    <div>
+        <p>Gênero:</p>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br>
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Outro</label><br>
+    </div>
+
+    <div>
+        <p>Interesses:</p>
+        <input type="checkbox" id="esporte" name="interesses" value="eportes">
+        <label for="esporte">Esporte</label><br>
+        <input type="checkbox" id="musica" name="interesses" value="musica">
+        <label for="musica">Música</label><br>
+        <input type="checkbox" id="leitura" name="interesses" value="leitura">
+        <label for="leitura">Leitura</label><br>
+    </div>
+<div>
+    <label for="mensagem">Mensagem:</label><br>
+    <textarea id="mensagem" name="mensagem"></textarea>
+</div>
+<button type="submit">Enviar</button>
+</form>
+
+
+    <footer>
+        <p>&copy; 2025 Luiza Site</p>
+    </footer>
+</body>
+</html>
