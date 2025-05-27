@@ -1,1 +1,10 @@
-<p>pedido-list works!</p>
+<h2>Lista De Pedidos</h2>
+<div *ngFor="let pedido of pedidos">
+  <p>><strong>Cliente:</strong>{{pedido.cliente.nome}}</p>
+  <p><strong>Total:</strong>{{total(pedido) | number:"1.2-2"}}</p>
+<p><Strong>Produtos</Strong></p>
+<ul>
+  <li *ngFor="let produto of pedido.produtos">{{produto.nome}}</li>
+</ul>
+<hr>
+</div>
