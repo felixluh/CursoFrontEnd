@@ -1,3 +1,6 @@
+import { convertToParamMap } from "@angular/router";
+import { from } from "rxjs";
+
 //arquivo responsável por definir o modelo de dados da vaga
  export class Vaga{
     
@@ -61,4 +64,28 @@
      public set salario(value: number) {
          this._salario = value;
      }
-}
+
+
+// Métodos de conversão de objetos
+  //Obj => Json
+  public toMap():{[key:string]:any}{
+    return{
+      id: this._id,
+      nome: this._nome,
+      foto: this._foto,
+      descricao: this._descricao,
+      salario: this._salario
+    }
+  }
+  //Json => Obj
+  static fromMap(map:any): Vaga{
+    return new Vaga(
+      map.id,
+      map.nome,
+      map.foto,
+      map.descricao,
+      map.salario
+    )
+  }
+
+ }
