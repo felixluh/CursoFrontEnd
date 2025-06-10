@@ -5,14 +5,14 @@ import { VagasService } from 'src/app/services/vagas.service';
 @Component({
   selector: 'app-vagas',
   templateUrl: './vagas.component.html',
-  styleUrls: ['./vagas.component.scss']
+  styleUrls: ['./vagas.component.scss'],
 })
 
 //controller -> view -> model
-export class VagasComponent implements OnInit{
+export class VagasComponent implements OnInit {
   public vagas: Vaga[] = []; // vetor para armazenar as vagas do BD
 
-  constructor(private _vagasService: VagasService){}
+  constructor(private _vagasService: VagasService) {}
   //injeta o serviço de vagas  dentro do componente
 
   ngOnInit(): void {
@@ -21,22 +21,15 @@ export class VagasComponent implements OnInit{
 
   //função para listar as vagas
 
-  listarVagas(){
-    this._vagasService.getVagas().subscribe( // subscribe é um método do Observable que permite recerber os dados e tratar para vetor
+  listarVagas() {
+    this._vagasService.getVagas().subscribe(
+      // subscribe é um método do Observable que permite recerber os dados e tratar para vetor
       (e) => {
-        this.vagas= e.map(
-          (vaga) => {
-            return new Vaga(
-              vaga.id,
-              vaga.nome,
-              vaga.foto,
-              vaga.descricao,
-              vaga.salario
-            );
-          }
-        );
+        //listar vaga por vaga dentro do vetor
+        this.vagas = e.map((vaga) => {
+          return Vaga.fromMap(vaga);
+        });
       }
-    )
+    );
   }
-
 }

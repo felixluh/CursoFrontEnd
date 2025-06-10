@@ -1,0 +1,55 @@
+<h2>Cadastrar</h2>
+
+<!--formulario para mostrar vaga selecionada-->
+<form action="">
+  <label for="">ID</label>
+  <input type="text" [(ngModel)]="vaga.id"> <br>
+
+  <label for="">Nome</label>
+  <input type="text" [(ngModel)]="vaga.id"> <br>
+
+  <label for="">Foto</label>
+  <input type="text" [(ngModel)]="vaga.id"> <br>
+
+  <label for="">Descrição</label>
+  <input type="text" [(ngModel)]="vaga.id"> <br>
+
+  <label for="">Salário</label>
+  <input type="text" [(ngModel)]="vaga.id"> <br>
+
+<button type="button" (click)="cadastrarVaga()">cadastrar Vaga</button>
+<button type="button" (click)="atualizarVaga(vaga.id)">atualizar Vaga</button>
+<button type="button" (click)="excluirVaga(vaga.id)">Excluir Vaga</button>
+
+</form>
+
+<!--Tabela com vagas já cadastradas -->
+<section class="listar-vagas">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Codigo da Vaga</th>
+        <th>Vaga</th>
+        <th>Descriação da Vaga</th>
+        <th>Salário</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="vaga-row" *ngFor="let vaga of vagas">
+        <td>{{vaga.id}}</td>
+        <td>{{vaga.nome}}</td>
+        <td>{{vaga.descricao}}</td>
+        <td>{{vaga.salario}},00</td>
+        <td>
+          <button class="btn-listar" type="button" (click)="listarVagaPorId(vaga)">
+            Listar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+<div class="rodape"></div>
